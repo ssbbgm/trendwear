@@ -55,7 +55,6 @@ const MenuItem = styled.div`
     margin-left: 25px;
 `
 
-
 function Navbar() {
     return (
         <Container>
@@ -64,12 +63,12 @@ function Navbar() {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Input/>
-                        <Search/>
+                        <Search style={{color:"gray", fontSize: "16px"}}/>
                     </SearchContainer>
                 </Left>
                 <Center>
                     <Logo>
-                        TreadWear
+                        TrendWear
                     </Logo>
                 </Center>
                 <Right>
