@@ -7,6 +7,7 @@ const Container = styled.div`
     height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
 `
 
 const Arrow = styled.div`
@@ -29,6 +30,7 @@ const Arrow = styled.div`
 
 const Wrapper = styled.div`
     height: 100%;
+    display: flex;
 `
 const Slide = styled.div`
     width: 100vw;
@@ -58,7 +60,10 @@ const Desc = styled.p`
     letter-spacing: 3px;
 `
 const Button = styled.button`
-    
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
 `
 
 function Slider() {
@@ -68,12 +73,32 @@ function Slider() {
                 <ArrowLeftOutlined />
             </Arrow>
             <Wrapper>
-                <Slide>
+                <Slide bg='f5fafd'>
                     <ImgContainer>
                         <Image src='https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg'/>
                     </ImgContainer>
                     <InfoContainer>
                         <Title>SUMMER SALE</Title>
+                        <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</Desc>
+                        <Button>SHOP NOW</Button>
+                    </InfoContainer>
+                </Slide>
+                <Slide bg='fcf1ed'>
+                    <ImgContainer>
+                        <Image src='https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg'/>
+                    </ImgContainer>
+                    <InfoContainer>
+                        <Title>WINTER SALE</Title>
+                        <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</Desc>
+                        <Button>SHOP NOW</Button>
+                    </InfoContainer>
+                </Slide>
+                <Slide bg='fbf0f4'>
+                    <ImgContainer>
+                        <Image src='https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg'/>
+                    </ImgContainer>
+                    <InfoContainer>
+                        <Title>POPULAR SALE</Title>
                         <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</Desc>
                         <Button>SHOP NOW</Button>
                     </InfoContainer>
