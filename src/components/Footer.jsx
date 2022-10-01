@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Pinterest, Twitter } from '@mui/icons-material';
+import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from '@mui/icons-material';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -64,12 +64,17 @@ const Right = styled.div`
     padding: 20px;
 `;
 
+const ContactItem = styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+`;
 
 function Footer() {
     return (
         <Container>
             <Left>
-                <Logo>LAMA.</Logo>
+                <Logo>TrendWear</Logo>
                 <Desc>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, facere. Amet quisquam harum aliquid non tempora modi, minima impedit unde tempore fuga id, dicta dolorem odio? Dolorum sit nulla tenetur!</Desc>
                 <SocialContainer>
                     <SocialIcon color='3B5999'>
@@ -102,7 +107,16 @@ function Footer() {
                 </List>
             </Center>
             <Right>
-                
+                <Title>Contact</Title>
+                <ContactItem>
+                    <Room style={{marginRight:'10px'}}/> 123 Main Street, Anywhere, USA
+                </ContactItem>
+                <ContactItem>
+                    <Phone style={{marginRight:'10px'}}/> 1 (222) 333-4444
+                </ContactItem>
+                <ContactItem>
+                    <MailOutline style={{marginRight:'10px'}}/> contact@trendwear.com
+                </ContactItem>
             </Right>
         </Container>
     );
